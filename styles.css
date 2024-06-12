@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.logo{
+    width: 45px;
+    height: auto;
+    animation: visible 1.5s forwards;
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    margin-top: 0;
+    font-family: fantasy;
+    font-size: 25px;
+    font-weight: 100;
+    animation: visible 1s forwards;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    font-family:'Trebuchet MS', sans-serif;
+    background: #000;
+    color: #fff;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 7px;
+    cursor: grab;
+}
+
+li:active {
+    cursor: grabbing;
+    opacity: 0.6;
+}
+
+.fa-html5{
+    color: #ED5119;
+}
+
+.fa-css3{
+    color: #0077FF;
+}
+
+.fa-js{
+    color: #FFFF00;
+}
+
+.fa-node-js{
+    color: #008000;
+}
+
+.fa-react{
+    color: #00DDFF;
+}
+
+.fa-git{
+    color: #F0300E;
+}
+
+i{
+    animation: translate 2s forwards;
+}
+
+h3{
+    background-image: linear-gradient(to right,
+    #f09433, #e6683c, #dc2743, #cc2366,
+    #bc1888, #a818a8, #9228d8, #7a3dd8,
+    #6d4edc);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    animation: visible 3.5s forwards;
+}
+
+@keyframes translate{
+    0%{
+        transform:translateX(-1300%);
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes visible{
+    0%{opacity: 0;}
+    50%{opacity: 0.5}
+    100%{opacity: 1;}
+}
